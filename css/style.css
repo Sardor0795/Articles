@@ -32,9 +32,9 @@ h3 {
   height: 100%;
 }
 
-/* RIGHT */
+/* Left block */
 
-.right {
+.left-block {
   flex-basis: 50%;
   height: 100%;
   background-image: url("../img/big_bg.jpg");
@@ -46,16 +46,13 @@ h3 {
   justify-content: center;
 }
 
-.right-content {
+.left-block-content {
   width: 285px;
 }
 
 .main-heading {
   margin: 0;
   margin-bottom: 24px;
-}
-
-.right-content-title {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -73,14 +70,14 @@ h3 {
   letter-spacing: 2px;
   color: #ffffff;
   cursor: pointer;
-  transition: 0.3s ease
+  transition: 0.3s ease;
 }
 
-.main-button:hover{
+.main-button:hover {
   background: rgba(30, 144, 255, 0.8);
 }
 
-.main-button:active{
+.main-button:active {
   background: rgba(30, 144, 255, 0.6);
 }
 
@@ -96,32 +93,34 @@ h3 {
   margin-right: 12px;
 }
 
-/* LEFT */
+/* Right block */
 
-.left {
+.right-block {
   flex-basis: 50%;
   padding: 54px;
 }
 
-.left-title {
+.right-block-title {
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 2px;
   margin-bottom: 24px;
+  color: #222222;
+  font-weight: 400;
 }
 
-.left-content {
+.right-block-content {
   border-top: 1px solid #999999;
   padding-top: 24px;
   margin-bottom: 23px;
 }
 
-.left-content-box {
+.right-block-content-box {
   display: flex;
   align-items: flex-start;
 }
 
-.left-content-box:not(:last-child) {
+.right-block-content-box:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -143,11 +142,11 @@ h3 {
   transition: 0.3s ease;
 }
 
-.box-title:hover{
-  color: #1E90FF;
+.box-title:hover {
+  color: #1e90ff;
 }
 
-.box-title:active{
+.box-title:active {
   color: rgba(30, 144, 255, 0.6);
 }
 
@@ -204,13 +203,15 @@ h3 {
   transition: 0.3s ease;
 }
 
-.more-btn:hover{
+.more-btn:hover {
   background: rgba(30, 144, 255, 0.8);
 }
 
-.more-btn:active{
+.more-btn:active {
   background: rgba(30, 144, 255, 0.6);
 }
+
+/* BG Retina */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -218,7 +219,7 @@ h3 {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .right {
+  .left-block {
     background-image: url("../img/big_bg@2x.jpg");
   }
 }
