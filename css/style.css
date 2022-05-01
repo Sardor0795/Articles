@@ -12,6 +12,7 @@ body {
   height: 100%;
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
+  background-color: #222222;
 }
 
 a {
@@ -27,15 +28,22 @@ h3 {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+  border: 0;
+}
+
 .main-block {
   display: flex;
+  justify-content: center;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
 }
 
 /* Left block */
 
 .left-block {
-  flex-basis: 50%;
   height: 100%;
   background-image: url("../img/big_bg.jpg");
   background-repeat: no-repeat;
@@ -44,7 +52,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 158px;
 }
 
 .left-block-content {
@@ -97,8 +105,8 @@ h3 {
 /* Right block */
 
 .right-block {
-  flex-basis: 50%;
   padding: 54px;
+  background-color: #fff;
 }
 
 .right-block-title {
@@ -202,6 +210,7 @@ h3 {
   color: #fff;
   text-align: center;
   transition: 0.3s ease;
+  width: 492px;
 }
 
 .more-btn:hover {
