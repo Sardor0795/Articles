@@ -143,8 +143,11 @@ button {
   width: 307px;
 }
 
-.box-title {
+.box-title-heading {
   margin-bottom: 4px;
+}
+
+.box-title {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 2px;
